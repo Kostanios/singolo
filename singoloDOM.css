@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.menulink{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 9px;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.slidephone{
+    display: inline-block;
+}
+
+.slide{
+    display: flex;
+    width: 912px;
+    height: 593px;
+}
+
+.svipercontainer{
+    width: 944px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.secondslide{
+    align-items: center;
+}
+
+#leftphone{
+    margin-left: 169px;
+}
+
+.sumbit{
+    width: 620px;
+    border-radius: 5px;
+    border-color: hsl(9, 62%, 74%);
+    background-color: hsl(9, 62%, 74%);
+    margin-bottom: 16px;
+    margin-top: 185px;
+    font-family: "Lato";
+    color:  #f06c64;
+}
+.transporter{
+    position: relative;
+    right: 912px;
+    display: flex;
+    transition: transform 0.6s ease;
+    width: 2736px;
+    height: 600px;
+}
