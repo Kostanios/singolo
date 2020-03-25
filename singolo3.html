@@ -3,6 +3,7 @@
     <head>
       <meta charset="utf-8">
       <link href="singolo3.css" type="text/css" rel="stylesheet">
+      <link href="singoloDOM.css" type="text/css" rel="stylesheet">
       <title>Singolo task#3</title>
     </head>
     <body>
@@ -12,47 +13,72 @@
           <div id="singolo">Singolo<span style="color: #f06c64"><sup>&#x2217;</sup><span></div>
           <menu>
             <div id="homebutton" class="menubuttons">Home</div>
-            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span>servises</div>
-            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span>portfolio</div>
-            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span>about</div>
-            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span>contact</div>
+            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span><a class="menulink" href="#servises">servises</a></div>
+            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span><a class="menulink" href="#portfolio">portfolio</a></div>
+            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span><a class="menulink" href="#about">about</a></div>
+            <div class="menubuttons"><span class="dot">&middot;	&#160;	&#160;</span><a class="menulink" href="#contact">contact</a></div>
           </menu>
         </div>
-      </header>
+      </header> 
       <div class="bottom backblack"></div>
       <div class="container" >
         <div class="content anime">
-          <div class="sviper">
-            <div class="sensor"></div>
-            <object type="image/svg+xml" data="assets/chevleft.svg" ></object>
+          <div class="svipercontainer">
+            <div class="sviper">
+              <div class="sensor"></div>
+              <object class="firstSlideChevleft" type="image/svg+xml" data="assets/chevleft.svg" ></object>
+              <object class="secondSlideChevleft" type="image/svg+xml" data="assets/secondchevleft.svg" style="display: none;"></object>
+            </div>
+            <div class="sviper">
+              <div class="sensor"></div>
+              <object class="firstSlideChevleft" type="image/svg+xml" data="assets/chevright.svg" ></object>
+              <object class="secondSlideChevleft" type="image/svg+xml" data="assets/secondchevright.svg" style="display: none;"></object>
+            </div>
           </div>
-        <div id="verticalmodel">
-          <object id="shadowvertical" type="image/svg+xml" data="assets/shadowvertical.svg" ></object>
-          <object id="basevertical" type="image/svg+xml" data="assets/basevertical.svg"></object>
-          <object id="screenvertical" type="image/svg+xml" data="assets/screenvertical.svg"></object>
-          <object id="buttoncirclevertical" type="image/svg+xml" data="assets/buttoncirclevertical.svg"></object>
-          <object id="squarevertical" type="image/svg+xml" data="assets/squarevertical.svg"></object>
-          <object id="speakervertical" type="image/svg+xml" data="assets/speakervertical.svg"></object>
-          <object id="cumcirclevertical" type="image/svg+xml" data="assets/cumcirclevertical.svg"></object>
-          <object id="reddotvertical" type="image/svg+xml" data="assets/reddotvertical.svg"></object>
+        <div class="transporter">
+          <div class="slide secondSlide">
+            <div id="leftphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+
+            <div id="centerphone" class="secondSlideElement"><img src="assets/phoneverticalbig.png" alt="phoneverticalbig"></div>
+
+            <div id="rigthphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+        </div>  
+        <div class="slide">
+          <div class="firstSlideElement" id="verticalmodel">
+            <object id="shadowvertical" type="image/svg+xml" data="assets/shadowvertical.svg" ></object>
+            <object id="basevertical" type="image/svg+xml" data="assets/basevertical.svg"></object>
+            <object id="screenvertical" type="image/svg+xml" data="assets/screenvertical.svg"></object>
+            <object id="buttoncirclevertical" type="image/svg+xml" data="assets/buttoncirclevertical.svg"></object>
+            <object id="squarevertical" type="image/svg+xml" data="assets/squarevertical.svg"></object>
+            <object id="speakervertical" type="image/svg+xml" data="assets/speakervertical.svg"></object>
+            <object id="cumcirclevertical" type="image/svg+xml" data="assets/cumcirclevertical.svg"></object>
+            <object id="reddotvertical" type="image/svg+xml" data="assets/reddotvertical.svg"></object>
+          </div>
+
+          <div class="firstSlideElement" id="horizontalmodel">
+            <object id="shadowhorizontal" type="image/svg+xml" data="assets/shadowhorizontal.svg" ></object>
+            <object id="basehorizontal" type="image/svg+xml" data="assets/basehorizontal.svg" ></object>
+            <object id="screenhorizontal" type="image/svg+xml" data="assets/screenhorizontal.svg" ></object>
+            <object id="speakerhorizontal" type="image/svg+xml" data="assets/speakerhorizontal.svg" ></object>
+            <object id="buttoncirclehorizontal" type="image/svg+xml" data="assets/buttoncirclehorizontal.svg" ></object>
+            <object id="squarehorizontal" type="image/svg+xml" data="assets/squarehorizontal.svg" ></object>
+            <object id="cumcirclehorizontal" type="image/svg+xml" data="assets/cumcirclehorizontal.svg" ></object>
+            <object id="reddothorizontal" type="image/svg+xml" data="assets/reddothorizontal.svg" ></object>
+          </div>
+       </div>
+        
+        <div class="slide secondSlide">
+              <div id="leftphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+
+              <div id="centerphone" class="secondSlideElement"><img src="assets/phoneverticalbig.png" alt="phoneverticalbig"></div>
+
+              <div id="rigthphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+        </div>  
       </div>
-        <div id="horizontalmodel">
-          <object id="shadowhorizontal" type="image/svg+xml" data="assets/shadowhorizontal.svg" ></object>
-          <object id="basehorizontal" type="image/svg+xml" data="assets/basehorizontal.svg" ></object>
-          <object id="screenhorizontal" type="image/svg+xml" data="assets/screenhorizontal.svg" ></object>
-          <object id="speakerhorizontal" type="image/svg+xml" data="assets/speakerhorizontal.svg" ></object>
-          <object id="buttoncirclehorizontal" type="image/svg+xml" data="assets/buttoncirclehorizontal.svg" ></object>
-          <object id="squarehorizontal" type="image/svg+xml" data="assets/squarehorizontal.svg" ></object>
-          <object id="cumcirclehorizontal" type="image/svg+xml" data="assets/cumcirclehorizontal.svg" ></object>
-          <object id="reddothorizontal" type="image/svg+xml" data="assets/reddothorizontal.svg" ></object>
-        </div>
-        <div id="rsviper" class="sviper">
-          <div class="sensor"></div>
-          <object type="image/svg+xml" data="assets/chevright.svg" ></object>
-        </div>
       </div>
       </div>
-      <div class="bottom backred"></div>
+      <a name="servises"></a>
+      <div class="bottom backred sliderbottom"></div>
       <div class="container servises">
         <div class="content">
           <h1>Our Services</h1>
@@ -121,6 +147,7 @@
           </div>
         </div>
       </div>
+      <a name="portfolio"></a>
       <div class="bottom backgray"></div>
       <div class="footercontainer portfolio">
         <div class="footerheader footercontent">
@@ -173,6 +200,7 @@
                 </div>
         </div>
       </div>
+      <a name="about"></a>
       <div class="bottom backblack"></div>
       <div class="footercontainer about">
         <div class="footercontent footer">
@@ -251,6 +279,7 @@
         </div>
         </div>
       </div>
+      <a name="contact"></a>
       <div class="bottom backwhite"></div>
       <div class="quotecontainer">
         <div class="quotecontent">
@@ -269,6 +298,7 @@
               </div>
               <div class="inputblock pinput">
               <input type="text" class="inputdescribe" placeholder="Describe your project in detail...">
+              <button class = "SUMBIT linput">SUMBIT</button>
               </div>
             </form>
             <div class="contactcontainer">
