@@ -1,7 +1,3 @@
-
-
-
-
 var chevArray = document.getElementsByClassName("sensor");
 var dotArray = document.getElementsByClassName("dot");
 var buttonArray = document.getElementsByClassName("menubuttons");
@@ -198,4 +194,18 @@ var slideNumber = 1;
     portfolioButtons[3].style.color = "#dedede"
     portfolioButtons[3].style.border = "1px solid #c5c5c5"
     active = portfolioButtons[3]
+  }
+
+  var dialog = document.querySelector("dialog");
+  var input = document.getElementsByClassName("input");
+  var SUMBIT = document.getElementsByClassName("SUMBIT")[0];
+  SUMBIT.onclick = function(){
+    dialog.show();  
+  }
+  document.getElementById("closeDialog").onclick = function(){
+    input[0].value = "";
+    input[1].value = "";
+    input[2].value = "";
+    input[3].value = "";
+    dialog.close();
   }
