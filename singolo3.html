@@ -1,6 +1,9 @@
+
+
 <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="singolo3.css" type="text/css" rel="stylesheet">
       <link href="singoloDOM.css" type="text/css" rel="stylesheet">
       <title>Singolo task#3</title>
@@ -8,7 +11,58 @@
     <body>
       
       <header>
+        <div class="littlemenucontainer" style="display: none;"></div>
+        <div id="burger">
+          <div id="burgerSensor"></div>
+          <div class="burgerpart"></div>
+          <div class="burgerpart"></div>
+          <div class="burgerpart"></div>
+        </div>
+        <div id="littlemenu" style="display: none;">
+          <div id="homebutton" class="menubuttons">Home</div>
+          <div class="menubuttons"><a class="menulink" href="#servises">servises</a></div>
+          <div class="menubuttons"><a class="menulink" href="#portfolio">portfolio</a></div>
+          <div class="menubuttons"><a class="menulink" href="#about">about</a></div>
+          <div class="menubuttons"><a class="menulink" href="#contact">contact</a></div>
+        </div>
+        <style>
+             @media only screen and (max-device-width: 374px){
+               .littlemenucontainer{
+                display: block !important;
+                width: 278px;
+                height: 812px;
+                position: absolute;
+                z-index: 19;
+                background-color: #2d303a;
+               }
+               #littlemenu{
+                   display: block !important;
+                   position:absolute;
+                   margin-top: 230px;
+                   margin-left: 50px;
+                   z-index: 20;
+               } 
+               #burger{
+                  display: block !important;
+                  position:absolute;
+                  margin-left: 50px;
+                  z-index: 20;
+               }
+               .burgerpart{
+                 margin-bottom: 6.8px;
+                 width:25px;
+                 height: 2.5px;
+                 background-color: #ffffff;
+               }
+               #burgerSensor{
+                 position: absolute;
+                 width: 25px;
+                 height: 25px;
+               }
+            }
+        </style>
         <div class="content header">
+
           <div id="singolo">Singolo<span style="color: #f06c64"><sup>&#x2217;</sup><span></div>
           <menu>
             <div id="homebutton" class="menubuttons">Home</div>
@@ -20,7 +74,7 @@
         </div>
       </header> 
       <div class="bottom backblack"></div>
-      <div class="container" >
+      <div class="mycontainer" >
         <div class="content anime">
           <div class="svipercontainer">
             <div class="sviper">
@@ -36,14 +90,14 @@
           </div>
         <div class="transporter">
           <div class="slide secondSlide">
-            <div id="leftphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+            <div class="secondSlideElement model"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
 
-            <div id="centerphone" class="secondSlideElement"><img src="assets/phoneverticalbig.png" alt="phoneverticalbig"></div>
+            <div class="secondSlideElement model"><img src="assets/phoneverticalbig.png" alt="phoneverticalbig"></div>
 
-            <div id="rigthphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+            <div class="secondSlideElement model"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
         </div>  
         <div class="slide">
-          <div class="firstSlideElement" id="verticalmodel">
+          <div class="firstSlideElement model" id="verticalmodel">
             <object id="shadowvertical" type="image/svg+xml" data="assets/shadowvertical.svg" ></object>
             <object id="basevertical" type="image/svg+xml" data="assets/basevertical.svg"></object>
             <div id="offscreenvertical"></div>
@@ -56,7 +110,7 @@
             <object id="reddotvertical" type="image/svg+xml" data="assets/reddotvertical.svg"></object>
           </div>
 
-          <div class="firstSlideElement" id="horizontalmodel">
+          <div class="firstSlideElement model" id="horizontalmodel">
             <object id="shadowhorizontal" type="image/svg+xml" data="assets/shadowhorizontal.svg" ></object>
             <object id="basehorizontal" type="image/svg+xml" data="assets/basehorizontal.svg" ></object>
             <div id="offscreenhorizontal"></div>
@@ -71,18 +125,18 @@
        </div>
         
         <div class="slide secondSlide">
-              <div id="leftphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+              <div class="secondSlideElement model"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
 
-              <div id="centerphone" class="secondSlideElement"><img src="assets/phoneverticalbig.png" alt="phoneverticalbig"></div>
+              <div class="secondSlideElement model"><img src="assets/phoneverticalbig.png" alt="phoneverticalbig"></div>
 
-              <div id="rigthphone" class="secondSlideElement"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
+              <div class="secondSlideElement model"><img src="assets/phoneverticallittle.png" alt="phoneverticallittle"></div>
         </div>  
       </div>
       </div>
       </div>
       <a name="servises"></a>
       <div class="bottom backred sliderbottom"></div>
-      <div class="container servises">
+      <div class="mycontainer servises">
         <div class="content">
           <h1>Our Services</h1>
           <h3>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h3>
@@ -289,6 +343,10 @@
           <h3>Get a Quote</h3>
           <h2>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h2>
           <div class="vacancyblock">
+            <dialog>
+              <p>Мы рассмотрим ваше резюме в ближайшее время и не позвоним СПАСИБО</p>
+              <p><button type="button" id="closeDialog">ладно.</button></p>
+             </dialog>
             <form class="inputcontainer">
               <div class="inputblock linput" >
               <input name="name" type="text" class="inputname input" placeholder="Name (Required)">
@@ -301,10 +359,7 @@
               </div>
               <div class="inputblock pinput">
               <input type="text" class="inputdescribe input" placeholder="Describe your project in detail...">
-              <dialog>
-                <p>Мы рассмотрим ваше резюме в ближайшее время и не позвоним СПАСИБО</p>
-                <p><button type="button" id="closeDialog">ладно.</button></p>
-               </dialog>
+
               <button type="button" class = "SUMBIT linput">sumbit</button>
               </div>
             </form>
@@ -359,7 +414,12 @@
         </div>
       </footer>
       <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
   </html>
+  
+
   
 
