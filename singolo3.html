@@ -1,5 +1,3 @@
-
-
 <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
@@ -293,17 +291,21 @@
           <div class="vacancyblock">
             <form class="inputcontainer">
               <div class="inputblock linput" >
-              <input type="text" class="inputname" placeholder="Name (Required)">
+              <input name="name" type="text" class="inputname input" placeholder="Name (Required)">
               </div>
               <div class="inputblock  linput">
-              <input type="text" class="inputemail" placeholder="Email (Required)">
+              <input name="email" type="text" class="inputemail input" placeholder="Email (Required)">
               </div>
               <div class="inputblock  linput">
-              <input type="text" class="inputsubject" placeholder="Subject">
+              <input type="text" class="inputsubject input" placeholder="Subject">
               </div>
               <div class="inputblock pinput">
-              <input type="text" class="inputdescribe" placeholder="Describe your project in detail...">
-              <button class = "SUMBIT linput">SUMBIT</button>
+              <input type="text" class="inputdescribe input" placeholder="Describe your project in detail...">
+              <dialog>
+                <p>Мы рассмотрим ваше резюме в ближайшее время и не позвоним СПАСИБО</p>
+                <p><button type="button" id="closeDialog">ладно.</button></p>
+               </dialog>
+              <button type="button" class = "SUMBIT linput">sumbit</button>
               </div>
             </form>
             <div class="contactcontainer">
@@ -360,3 +362,4 @@
     </body>
   </html>
   
+
