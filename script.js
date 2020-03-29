@@ -1,7 +1,11 @@
+
+
+
+
 var chevArray = document.getElementsByClassName("sensor");
 var dotArray = document.getElementsByClassName("dot");
 var buttonArray = document.getElementsByClassName("menubuttons");
-var container = document.getElementsByClassName("container")[0];
+var container = document.getElementsByClassName("mycontainer")[0];
 
 
 var firstsvipers = document.getElementsByClassName("firstSlideChevleft");
@@ -208,4 +212,22 @@ var slideNumber = 1;
     input[2].value = "";
     input[3].value = "";
     dialog.close();
+  }
+  var burger = document.getElementById("burger");
+  var burgerSensor =  document.getElementById("burgerSensor");
+
+
+  var burgerposition =  true;
+
+  burgerSensor.onclick = function(){
+    if(burgerposition){
+      burger.style.transform = "rotate(90deg)"
+      burgerposition = false;
+      document.getElementsByClassName("littlemenucontainer")[0].style.transform = "translateX(100%)";
+    }
+    else{
+      burger.style.transform = "rotate(0deg)"
+      burgerposition = true;
+      document.getElementsByClassName("littlemenucontainer")[0].style.transform = "translateX(0%)";
+    }
   }
