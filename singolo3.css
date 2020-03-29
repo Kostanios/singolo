@@ -834,7 +834,32 @@ margin-left: 106px;
   }
  }
  @media only screen 
- and (max-device-width: 374px){
+
+ and (max-device-width: 767px){
+  .transporter {
+    right: 860px;
+    zoom: 0.33;
+  }
+  .content h3 {
+    width: 376px;
+  }
+  .grid{
+    grid-template-columns: 375px;
+    grid-template-rows: 114px 114px 114px 114px 114px 114px;
+  }
+  .sviper {
+    margin-top: 74px;
+}
+  .svipercontainer {
+    width: 365px;
+}
+  .content h1{
+    font-size: 45px;
+  }
+  .content h3{
+    font-size: 27px;
+    height: 233px;
+  }
    .header{
      justify-content: center;
    }
@@ -855,5 +880,78 @@ margin-left: 106px;
     text-align: left;
 
   }
-
+  .content{
+    width: 375px;
+  }
+  .svipercontainer{
+    width:335px;
+  }
+  .mycontainer{
+    height: 180px;
+  }
+  .servises {
+    height: 1100px;
+  }
+  .footercontent {
+    width: 375px;
+  }
+  .footercontent {
+    width: 375px;
+  }
+  .galeryGrid {
+    grid-template-columns: 125px 125px;
+    grid-column-gap: 69px;
+    grid-row-gap: 0px;
+    grid-template-rows: 165px 165px 165px 165px 165px 165px;
+  }
+  .footercell {
+    zoom: 0.8;
+  }
+  .portfolio{
+    height: 1215px;
+  }
+  .footercontent h2{
+    width: 375px;
+  }
+  .footercontent{
+    height: 1000px;
+  }
+  .footercontent h4{
+    width: 375px;
+    height: 160px;
+  }
+  .about{
+    height: 1700;
+  }
+  .footerGrid{
+    grid-template-columns: 375px;
+    grid-row-gap: 25px;
+  }
+  .quotecontent h2 {
+    width: 375px;
+  }
+  .quotecontent{
+    width: 375px;
+  }
+  .vacancyblock{
+    flex-direction: column;
+  }
+  .inputblock {
+    width: 375px;
+  }
+  .inputblock input{
+    width: 350px;
+  }
+  .sumbit{
+    width: 375px;
+  }
+  .contactcontainer {
+    margin: 50px 20px;
+  }
+  .quotecontent {
+    height: 860px;
+  } 
+  footer .by {
+    width: 375px;
+  }
  }
